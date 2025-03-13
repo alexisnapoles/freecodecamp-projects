@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url("https://img.freepik.com/free-vector/cat-lover-pattern-background-design_53876-100662.jpg?t=st=1741878442~exp=1741882042~hmac=8bcc116114d2d490084a3383035900c3429ad2d551c8491187025c5df18b8141&w=1380");
+    min-height: 500px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: Verdana, Sans;
+    text-align: center; 
+  }
+  
+  form {
+    background-color: rgba(255, 87, 51, 25%);
+    max-width: 500px;
+    padding: 10px 10px;
+    margin: 50px auto;
+  }
+  
+  .row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 28px;
+  }
+  
+  .row > div {
+    border-bottom: 1px solid rgba(255, 87, 51, 25%);
+    padding: 0.1em;
+  }
