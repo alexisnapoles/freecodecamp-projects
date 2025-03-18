@@ -1,33 +1,87 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-image: url("https://img.freepik.com/free-vector/cat-lover-pattern-background-design_53876-100662.jpg?t=st=1741878442~exp=1741882042~hmac=8bcc116114d2d490084a3383035900c3429ad2d551c8491187025c5df18b8141&w=1380");
-    min-height: 500px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    font-family: Verdana, Sans;
-    text-align: center; 
-  }
-  
-  form {
-    background-color: rgba(255, 87, 51, 25%);
-    max-width: 500px;
-    padding: 10px 10px;
-    margin: 50px auto;
-    border-radius: 6px;
-  }
-  
-  .row {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 28px;
-  }
-  
-  .row > div {
-    border-bottom: 1px solid rgba(255, 87, 51, 25%);
-    padding: 0.1em;
-  }
+  box-sizing: border-box;
+  font-family: Arial, Sans-serif;
+  font-size: 18px;
+}
+
+body {
+  background-image: url("https://img.freepik.com/free-vector/cat-lover-pattern-background-design_53876-100662.jpg?t=st=1741878442~exp=1741882042~hmac=8bcc116114d2d490084a3383035900c3429ad2d551c8491187025c5df18b8141&w=1380");
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  text-align: center; 
+}
+
+h1 {
+  font-size: 34px;
+}
+
+h1, p {
+  margin: 30px auto;
+  text-align: center;
+}
+
+form {
+  background-color: #dddddd80;
+  max-width: 500px;
+  padding: 20px 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin: 0 auto;
+  text-align: left;
+  padding: 10px 10px;
+  display: block;
+}
+
+textarea {
+  resize: both;
+  overflow: auto;
+  max-width: 440px;
+}
+
+input, select, textarea{
+  width: 100%;
+  padding: 6px 10px;
+  margin: 7px 0;
+  border-radius: 5px;
+  border: 0;
+}
+
+input, select, textarea {
+  font-size: 17px;
+}
+
+input[type=radio], input[type=checkbox] {
+  width: 25px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin: 3px;
+  padding: 2px 0;
+}
+
+input[type=submit] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #FFAF69;
+  border-color: white;
+  min-width: 300px;
+}
+#submit {
+  transition-duration: 0.4s;
+}
+
+input[type="submit"]:hover {
+  background-color: #6E4B34;
+  color: white;
+}

@@ -7,110 +7,142 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1 id="title">Cats Survey</h1>
-    <p id="description">By answering this survey, you will help the world get to know cats better.</p>
-    <form id="survey-form">
-      <div class="form-group">
-        <label for="name" id="name-label">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
-      </div>
-      <div class="form-group">
-        <label for="email" id="email-label">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-      </div>
-      <div class="form-group">
-        <label for="number" id="number-label">Age:</label>
-        <input type="number" id="number" name="age" min="7" max="100" placeholder="Age" required>
-      </div>
+  <h1 id="title">Cats Survey</h1>
+  <p id="description">By answering this survey, you will help the world get to know cats better.</p>
+  
+  <form id="survey-form">
+    <div class="form-group">
+      <label for="name" id="name-label">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    </div>
+    <div class="form-group">
+      <label for="email" id="email-label">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+    <div class="form-group">
+      <label for="number" id="number-label">Age:</label>
+      <input type="number" id="number" name="age" min="7" max="100" placeholder="Age" required>
+    </div>
 
-      <div class="form-group">
-        <label for="dropdown" id="dropdown-label">How many cats do you own?</label>
-        <select id="dropdown" name="">
-          <option value="onetofive">1 - 5</option>
-          <option value="sixtoten">6 - 10</option>
-          <option value="elevenplus">11+</option>
-        </select>
-      </div>
-      
-      <div class="form-group">
-        <label for="cat-care-rating">Rate the following aspects of cat care:</label>
-        <div class="row">
-          <div>""</div>
-          <div>Poor</div>
-          <div>Average</div>
-          <div>Excellent</div>
-        </div>
+    <div class="form-group">
+      <label for="dropdown" id="dropdown-label">How many cats do you own?</label>
+      <select id="dropdown" name="">
+        <option value="onetofive">1 - 5</option>
+        <option value="sixtoten">6 - 10</option>
+        <option value="elevenplus">11+</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <label>How often do you take your cat(s) to the vet?</label>
+      <label for="monthly">
+        <input type="radio" id="monthly" name="frequencytovet" value="monthly" checked> Monthly
+      </label>
+      <label for="quarterly">
+        <input type="radio" id="quarterly" name="frequencytovet" value="quarterly"> Quarterly
+      </label>
+      <label for="annualy">
+        <input type="radio" id="annualy" name="frequencytovet" value="annualy"> Annualy
+      </label>
+      <label for="onlywhensick">
+        <input type="radio" id="onlywhensick" name="frequencytovet" value="onlywhensick"> Only when sick
+      </label>
+    </div>
 
-        <div class="row">
-          <div>Feeding</div>
-          <div class="radio-group">
-            <label for="feeding-poor">
-              <input type="radio" id="feeding-poor" name="feeding" value="feeding-poor" checked>
-            </label>
-          </div>
-          <div>
-            <div class="radio-group">
-            <label for="feeding-average">
-              <input type="radio" id="feeding-average" name="feeding" vlaue="feeding-average">
-            </label>
-          </div>
-          </div>
-          <div>
-            <div class="radio-group">
-            <label for="feeding-excellent">
-              <input type="radio" id="feeding-excellent" name="feeding" value="feeding-excellent">
-            </label>
-          </div>
-          </div>
-        </div>
+    <div class="form-group">
+      <label>What activities do you engage in with your cat(s)?</label>
+      <label for="playing">
+        <input type="checkbox" id="playing" name="activity0" value="playing" > Playing
+      </label>
+      <label for="grooming">
+        <input type="checkbox" id="grooming" name="activity1" value="grooming"> Grooming
+      </label>
+      <label for="training">
+        <input type="checkbox" id="training" name="activity2" value="training"> Training
+      </label>
+      <label for="others">
+        <input type="checkbox" id="others" name="activity3" value="others"> Others, please specify <input type="text" id="otheractivitiesinput" name="otheractivitiesinput" placeholder="Enter other activities">
+      </label>
+    </div>
 
-        <div class="row">
-          <div>Grooming</div>
-          <div class="radio-group">
-            <label for="grooming-poor">
-              <input type="radio" id="grooming-poor" name="grooming" value="grooming-poor" checked>
-            </label>
-          </div>
-          <div>
-            <div class="radio-group">
-            <label for="grooming-average">
-              <input type="radio" id="grooming-average" name="grooming" value="grooming-average">
-            </label>
-          </div>
-          </div>
-          <div>
-            <div class="radio-group">
-            <label for="grooming-excellent">
-              <input type="radio" id="grooming-excellent" name="grooming" value="grooming-excellent">
-            </label>
-          </div>
-          </div>
-        </div>
+    <div class="form-group">
+      <label>Describe your cat's favorite toy(s).</label>
+      <label for="favoritetoy">
+        <input type="text" id="favoritetoy" name="favoritetoy" placeholder="Enter your cat's favorite toy(s)">
+      </label>
+    </div>
 
-        <div class="row">
-          <div>Health Check-ups</div>
-          <div class="radio-group">
-            <label for="checkups-poor">
-              <input type="radio" id="checkups-poor" name="checkups" value="checkups-poor" checked>
-            </label>
-          </div>
-          <div>
-            <div class="radio-group">
-            <label for="checkups-average">
-              <input type="radio" id="checkups-average" name="checkups" value="checkups-average">
-            </label>
-          </div>
-          </div>
-          <div>
-            <div class="radio-group">
-            <label for="checkups-excellent">
-              <input type="radio" id="checkups-excellent" name="checkups" value="checkups-excellent">
-            </label>
-          </div>
-          </div>
-        </div>
+    <div class="form-group radiobutton">
+      <label>Do you have pet insurance for you cat(s)?</label>
+      <label for="petinsurance">
+        <input type="radio" id="yes" name="petinsurance" value="yes" checked> Yes
+      </label>
+      <label for="petinsurance">
+        <input type="radio" id="no" name="petinsurance" value="no"> No
+      </label>
+    </div>
 
-      </div>
-    </form>
+    <div class="form-group">
+      <label for="healthsupplements">What health supplements do you provide to your cat(s)?</label>
+      <label for="vitamins">
+        <input type="checkbox" id="vitamins" name="vitamins" value="vitamins" > Vitamins
+      </label>
+      <label for="Probiotics">
+        <input type="checkbox" id="probiotics" name="probiotics" value="probiotics"> Probiotics
+      </label>
+      <label for="omega-3">
+        <input type="checkbox" id="omega-3" name="omega-3" value="training"> Training
+      </label>
+      <label for="otherhealthsupplements">
+        <input type="checkbox" id="otherhealthsupplements" name="otherhealthsupplements" value="otherhealthsupplements"> Others, please specify <input type="text" id="otherhealthsupplementsinput" name="otherhealthsupplementsinput" placeholder="Enter other supplements">
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label>Do you use any technology to monitor your cat's health?</label>
+      <label for="cattech-yes">
+        <input type="radio" id="cattech-yes" name="cattech" value="cattech-yes" checked> Yes
+      </label>
+      <label for="cattech-no">
+        <input type="radio" id="cattech-no" name="cattech" value="cattech-no"> No
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label for="care-challenge"> What is the most challenging aspect of taking care of your cat(s)?
+        <textarea id="care-challenge" name="care-challenge" placeholder="Describe your most challenging experience"></textarea>
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label for="resource-learning">What resources do you use to learning about cat care?
+      </label>
+      <label for="books">
+        <input type="checkbox" id="books" name="books" value="books" > Books
+      </label>
+      <label for="online">
+        <input type="checkbox" id="online" name="online" value="online"> Online Articles
+      </label>
+      <label for="vet">
+        <input type="checkbox" id="vet" name="vet" value="vet"> Vet Consultations
+      </label>
+      <label for="other-resources">
+        <input type="checkbox" id="other-resources" name="other-resources" value="other-resources"> Others, please specify <input type="text" id="other-resource-input" name="other-resource-input" placeholder="Enter other resources">
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label for="memorable-experience">Share a memorable experience with your cat(s).
+        <textarea id="memorable-experience" name="memorable-experience" placeholder="Describe your most memorable experience with your cat(s)"></textarea>
+      </label>
+    </div>
+
+    <div class="form-group">
+    <label for="submit">
+      <input type="submit" name="submit" id="submit">        
+    </label>  
+    </div>
+
+  </form>
 </body>
 </html>
