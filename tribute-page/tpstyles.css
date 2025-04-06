@@ -91,10 +91,24 @@ li a:hover {
   width: 80%;
   margin: 0 auto;
 }
+
 section {
   border: 5px solid orange;
   display: flex;
   justify-content: center;
+}
+
+#biography {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+}
+
+#img-caption {
+  border: 5px solid gray;
+  background-color: transparent;
+  padding: 10px 20px;
+
 }
 
 figure {
@@ -107,6 +121,7 @@ figure {
   border: 5px solid red;
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 h2 {
@@ -114,15 +129,33 @@ h2 {
   margin-top: 0;
 }
 
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-110%, -50%);
+  background-color: transparent;
+  padding: 0;
+  font-size: 0.9em;
+}
+
 #tribute-info {
-  border: 5px solid purple;
-  display: block;
+  border: 5px solid blue;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+section #tribute-info {
+  width: 100%;
+  max-width: 250px;
 }
 
 #tribute-link {
   background-color: purple;
-  padding: 10px 20px;
   color: white;
+  padding: 10px 20px;
+  margin: 10px 0;
 }
 
 #tribute-link:hover {
