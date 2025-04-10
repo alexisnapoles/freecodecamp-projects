@@ -98,7 +98,7 @@ section {
   justify-content: center;
 }
 
-#biography {
+#about {
   position: relative;
   display: flex;
   margin: 0 auto;
@@ -161,6 +161,81 @@ section #tribute-info {
 #tribute-link:hover {
   background-color:orange;
 }
+
+#personage {
+  display: block;
+  margin: 0 auto;
+}
+
+#personage h2 {
+  text-align: center;
+}
+
+#gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+#gallery .card-box {
+  display: block;
+  /* border: 5px solid red; */
+  align-items: center;
+  width: 100%;
+  max-width: 200px;
+  padding: 10px;
+  margin: 10px;
+  flex-grow: 1;
+  height: 300px;
+  /* border-radius: 10px; */
+}
+
+#gallery img {
+  /* border: 5px solid yellow; */
+  width: 100%;
+  max-width: 200px;
+  /* padding: 10px; */
+  border-radius: 5px;
+}
+
+/* .card-box img {
+
+} */
+
+.card-title, .card-title a {
+  text-align: center;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: purple;
+}
+
+#gallery a {
+  /* text-decoration: none; */
+  color: white;
+}
+
+#legacy {
+  display: block;
+  text-align: center;
+}
+
+#legacy-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#legacy-icons img {
+  width: 10%;
+  max-width: 200px;
+}
+
 
 /* 
 THIS SECTION IS A CHEAT SHEET FOR THE CSS
